@@ -17,11 +17,4 @@ describe Solver do
       expect { @solver.factorial(-1) }.to raise_error(ArgumentError, 'Negative numbers are not allowed')
     end
   end
-
-  context 'testing the reverse_string method' do
-    it 'should return reverse string' do
-      reverse = @solver.reverse_string('hello')
-      expect(reverse).to be 'olleh'
-    end
-  end
 end
