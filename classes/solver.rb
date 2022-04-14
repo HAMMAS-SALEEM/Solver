@@ -5,4 +5,8 @@ class Solver
 
     factorial(num - 1, product * num)
   end
+
+  def reverse_string(str)
+    return str.split('').reverse.join('')
+  end
 end

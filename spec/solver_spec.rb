@@ -20,7 +20,7 @@ describe Solver do
   context 'testing the reverse_string method' do
     it 'should return reverse string' do
       reverse = @solver.reverse_string('hello')
-      expect(reverse).to be 'olleh'
+      expect(reverse).to eq 'olleh'
     end
   end
 end
