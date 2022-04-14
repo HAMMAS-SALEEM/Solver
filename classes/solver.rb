@@ -7,6 +7,6 @@ class Solver
   end
 
   def reverse_string(str)
-    return str.split('').reverse.join('')
+    str.chars.reverse.join
   end
 end
