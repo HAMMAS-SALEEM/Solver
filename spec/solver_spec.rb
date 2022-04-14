@@ -14,8 +14,7 @@ describe Solver do
       expect(factorial).to eq 6
     end
     it 'raises an error if input is negative' do
-      factorial = @solver.factorial(-1)
-      expect(factorial).to raise_error('Negative numbers are not allowed')
+      expect { @solver.factorial(-1) }.to raise_error(ArgumentError, 'Negative numbers are not allowed')
     end
   end
 end
